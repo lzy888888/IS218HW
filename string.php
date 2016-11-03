@@ -158,7 +158,7 @@ if ($pos1 === false) {
     // Note our use of ===.  Simply == would not work as expected
     // because the position of 'a' is the 0th (first) character.
     if ($pos2 !== false) {
-        echo "We found '$findme' in '$mystring2' at position $pos2";
+        echo "We found '$findme' in '$mystring2' at position $pos2 \n";
 	}
 
 
