@@ -194,4 +194,5 @@ var_dump($trimmed);
 $clean = trim($binary, "\x00..\x1F");
 var_dump($clean);
 
+echo "end \n";
 ?>
