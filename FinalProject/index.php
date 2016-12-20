@@ -5,7 +5,7 @@ require_once 'DB.php';
 
 if($user->is_loggedin()!="")
 {
- $user->redirect('home.php');
+ $user->redirect('Home.php');
  }
 
  if(isset($_POST['btn-login']))
@@ -16,7 +16,7 @@ if($user->is_loggedin()!="")
       
   if($user->login($uname,$umail,$upass))
   {
-   $user->redirect('home.php');
+   $user->redirect('Home.php');
   }
   else
   {
@@ -60,7 +60,11 @@ if($user->is_loggedin()!="")
 	      </button>
 	   </div>
 	   <br />
-	   <label>Don't have account yet ! <a href="sign-up.php">Sign Up</a></label>
+	   <label>Don't have account yet ! <a href="signup.php">Sign Up</a></label>        
+	   </button>
+	   </div>
+	   <br />
+	   <label>Users <a href="https://web.njit.edu/~zl326/FinalProject/csv/csv.php">List</a></label>
 	</form>
        </div>
    </div>

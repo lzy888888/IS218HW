@@ -15,7 +15,7 @@ if(isset($_POST['btn-signup']))
    $upass = trim($_POST['txt_upass']); 
 
    if($uname=="") {
-      $error[] = "provide username !";}
+      $error[] = "provide username !";
    }
    else if($umail=="") {
       $error[] = "provide email id !"; 
@@ -47,7 +47,7 @@ if(isset($_POST['btn-signup']))
 	 {
 	    if($user->register($fname,$lname,$uname,$umail,$upass))
 	    {
-	        $user->redirect('sign-up.php?joined');
+	        $user->redirect('signup.php?joined');
             }
 	 }
      }
@@ -56,12 +56,11 @@ if(isset($_POST['btn-signup']))
         echo $e->getMessage();						
      }									
    }
-
+}
 
 ?>
 
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
-"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
