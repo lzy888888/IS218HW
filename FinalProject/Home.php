@@ -30,7 +30,7 @@ $userRow=$stmt->fetch(PDO::FETCH_ASSOC);
 </div>
 <div class="content">
 welcome : <?php print($userRow['user_name']); ?>
-    </div>
+    <div>
     <div class="right">
      <label><a href="profile.php">view profile</a></label>
 </div>
